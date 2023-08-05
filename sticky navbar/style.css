@@ -1,0 +1,68 @@
+body {
+    margin: 0;
+    background-color: antiquewhite;
+}
+
+.navbar {
+    display: flex;
+    position: fixed;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    width: 100%;
+    box-shadow: 0 4px 8px rgba(0,0,0,.3);
+    transition: background-color 0.4s;
+}
+
+.navbar h2 {
+    margin: 0 20px;
+    font-size: 35px;
+    font-family:'Courier New', Courier, monospace;
+    letter-spacing: 1.5px;
+}
+
+.navbar ul {
+    display: flex;
+    list-style-type: none;
+}
+
+.navbar ul li a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: black;
+    font-family: cursive;
+}
+
+.top-container {
+    background-color: seashell;
+    height: 50vh;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    background-size: cover;
+    text-align: center;
+}
+
+.top-container h1 {
+    color: darkslateblue;
+    font-size: 40px;
+    font-family: cursive;
+    letter-spacing: 1.5px;
+}
+
+.text {
+    margin: 50px 5%;
+    font-family: sans-serif;
+}
+
+.navbar ul li a:hover, .navbar a h2:hover {
+    color: red;
+}
+
+.navbar.active {
+    background-color: black;
+}
+
+.navbar.active ul li a, .navbar.active a h2{
+    color: white;
+}
